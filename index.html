@@ -8,7 +8,7 @@
         // Function to detect if the user is on an Apple device
         function isAppleDevice() {
             const userAgent = navigator.userAgent.toLowerCase();
-            return /iphone|ipad|ipod/.test(userAgent);
+            return /iphone|ipad|ipod|macintosh/.test(userAgent);
         }
 
         // Redirect based on device type
