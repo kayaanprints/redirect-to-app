@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Redirect</title>
+    <script>
+        // Function to detect if the user is on an Apple device
+        function isAppleDevice() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return /iphone|ipad|ipod|macintosh/.test(userAgent);
+        }
+
+        // Redirect based on device type
+        window.onload = function() {
+            if (isAppleDevice()) {
+                window.location.href = 'https://www.apple.com/app-store/'; // Replace with your App Store link
+            } else {
+                window.location.href = 'https://play.google.com/store'; // Replace with your Play Store link
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate app store...</p>
+</body>
+</html>
