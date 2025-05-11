@@ -3,7 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Redirect</title>
+    <title>Kayaan App Redirect</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        img.logo {
+            max-width: 150px;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .website-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .website-btn:hover {
+            background-color: #e55a4f;
+        }
+    </style>
     <script>
         // Function to detect if the user is on an Apple device
         function isAppleDevice() {
@@ -22,6 +63,10 @@
     </script>
 </head>
 <body>
-    <p>Redirecting to the appropriate app store...</p>
+    <div class="container">
+        <img src="https://houseofkayaan.com/_next/image?url=%2Fkayaan-logo.jpeg&w=640&q=75" alt="Kayaan Prints Logo" class="logo">
+        <p>Redirecting to the appropriate app store...</p>
+        <a href="https://houseofkayaan.com" class="website-btn">Visit Our Website</a>
+    </div>
 </body>
 </html>
